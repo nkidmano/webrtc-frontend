@@ -2,72 +2,63 @@ import React from 'react';
 
 function Sidebar(props) {
   return (
-    <aside className="column is-2 is-narrow-mobile is-fullheight section is-hidden-mobile">
+    <aside id="sidebar" className="column is-2">
+      {/* Sidebar control START */}
       <ul className="level">
         <li className="level-left">
-          <i className="fas fa-home level-item" />
+          <span className="icon">
+            <i className="fas fa-home level-item" />
+          </span>
         </li>
         <li className="level-right">
-          <i className="fas fa-bell level-item" />
-          <i className="fas fa-cog level-item" />
+          <span className="icon">
+            <i className="fas fa-bell level-item" />
+          </span>
+          <span className="icon">
+            <i className="fas fa-cog level-item" />
+          </span>
         </li>
       </ul>
+      {/* Sidebar control END */}
+
+      {/* Sidebar list START */}
+      <p className="menu-label">Consersations</p>
       <ul className="menu-list">
         <li>
-          <a href="#" className="">
-            <span className="icon">
-              <i className="fas fa-comments" />
-            </span>{' '}
-            Conversations
-          </a>
-
-          <ul>
-            <li>
-              <a href="#">
-                <span className="icon is-small">
-                  <i className="fa fa-link" />
-                </span>{' '}
-                General
-              </a>
-            </li>
-          </ul>
+          <a href="#">General</a>
         </li>
         <li>
-          <a href="#" className="is-active">
-            <span className="icon">
-              <i className="fa fa-table" />
-            </span>{' '}
-            Voice rooms
-          </a>
-
-          <ul>
-            <li>
-              <a href="#">
-                <span className="icon is-small">
-                  <i className="fa fa-link" />
-                </span>{' '}
-                Babayaga
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span className="icon is-small">
-                  <i className="fa fa-link" />
-                </span>{' '}
-                Hall of fame
-              </a>
-            </li>
-          </ul>
+          <a href="#">Not General</a>
         </li>
         <li>
-          <a href="#" className="">
-            <span className="icon">
-              <i className="fa fa-info" />
-            </span>{' '}
-            Task boards
-          </a>
+          <a href="#">+ Add conversation</a>
         </li>
       </ul>
+      <p className="menu-label">Voice Rooms</p>
+      <ul className="menu-list">
+        <li>
+          <a href="#">General</a>
+        </li>
+        <li>
+          <a href="#">+ Add voice room</a>
+        </li>
+      </ul>
+      <p className="menu-label">Task Boards</p>
+      <ul className="menu-list">
+        <li>
+          <a href="#">Important</a>
+        </li>
+        <li>
+          <a href="#">+ Add task board</a>
+        </li>
+      </ul>
+      <p className="menu-label">Meetings</p>
+      <ul className="menu-list">
+        <li>
+          <a href="#">+ Create a meeting</a>
+        </li>
+      </ul>
+      {/* Sidebar list END */}
     </aside>
   );
 }
