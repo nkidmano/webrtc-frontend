@@ -1,8 +1,14 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const SidebarStyles = styled.aside`
+  height: 100vh;
+  background-color: #202020;
+`;
 
 function Sidebar(props) {
   return (
-    <aside id="sidebar" className="column is-2">
+    <SidebarStyles className="column is-2">
       {/* Sidebar control START */}
       <ul className="level">
         <li className="level-left">
@@ -59,7 +65,7 @@ function Sidebar(props) {
         </li>
       </ul>
       {/* Sidebar list END */}
-    </aside>
+    </SidebarStyles>
   );
 }
 
