@@ -1,4 +1,4 @@
-export const conversationMessages = [
+export const conversationList = [
   {
     user: 'no na',
     text: 'Hello my name is Eias',
